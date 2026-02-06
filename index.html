@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roblox Dünyası - Oyna, Oluştur, Paylaş</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="logo">R</div>
+      <nav class="nav">
+        <a href="#kesfet">Keşfet</a>
+        <a href="#gelistir">Geliştir</a>
+        <a href="#topluluk">Topluluk</a>
+        <a href="#guvenlik">Güvenlik</a>
+      </nav>
+      <div class="actions">
+        <button class="ghost">Giriş Yap</button>
+        <button class="primary">Ücretsiz Başla</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="kesfet">
+        <div class="hero-content">
+          <span class="badge">Yeni: Roblox Studio 2024</span>
+          <h1>Hayal gücünü paylaş, kendi dünyanı inşa et.</h1>
+          <p>
+            Roblox evreninde arkadaşlarınla oyna, yüz binlerce deneyimi keşfet ve kendi
+            oyununu oluştur. Her gün yeni maceralar seni bekliyor.
+          </p>
+          <div class="hero-actions">
+            <button class="primary" data-start>Hemen Oyna</button>
+            <button class="ghost">Studio'yu İndir</button>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <h3>70M+</h3>
+              <span>Günlük oyuncu</span>
+            </div>
+            <div>
+              <h3>2.4M</h3>
+              <span>Topluluk geliştiricisi</span>
+            </div>
+            <div>
+              <h3>50B+</h3>
+              <span>Arkadaş bağlantısı</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="card">
+            <span>Popüler Deneyim</span>
+            <h2>City Run</h2>
+            <p>Arkadaşlarınla yarış, ödülleri topla.</p>
+            <button class="primary small">Oyna</button>
+          </div>
+          <div class="card alt">
+            <span>Yeni</span>
+            <h2>Builder Quest</h2>
+            <p>Kendi adanı tasarla ve paylaş.</p>
+            <button class="ghost small">Keşfet</button>
+          </div>
+          <div class="floating">👾</div>
+        </div>
+      </section>
+
+      <section class="game" id="oyna">
+        <div class="section-title">
+          <h2>Mini Oyun: Orb Runner</h2>
+          <p>WASD veya yön tuşları ile hareket et, ışıklı topları topla.</p>
+        </div>
+        <div class="game-shell">
+          <div class="game-panel">
+            <div>
+              <span>Skor</span>
+              <strong data-score>0</strong>
+            </div>
+            <div>
+              <span>Kalan Süre</span>
+              <strong data-time>30s</strong>
+            </div>
+            <div>
+              <span>Durum</span>
+              <strong data-status>Başlamak için “Hemen Oyna” butonuna bas.</strong>
+            </div>
+          </div>
+          <canvas id="gameCanvas" aria-label="Roblox mini oyun"></canvas>
+        </div>
+      </section>
+
+      <section class="features" id="gelistir">
+        <div class="section-title">
+          <h2>Roblox Studio ile üret</h2>
+          <p>Kolay araçlar, canlı ekonomi ve yaratıcı topluluk.</p>
+        </div>
+        <div class="grid">
+          <article>
+            <h3>Esnek araç seti</h3>
+            <p>Modelleme, senaryo ve animasyon için tek bir stüdyo.</p>
+          </article>
+          <article>
+            <h3>Gelir paylaşımı</h3>
+            <p>Deneyimlerinden gelir elde et, mağazanda ürün sat.</p>
+          </article>
+          <article>
+            <h3>Topluluk desteği</h3>
+            <p>İpuçları, eğitimler ve canlı atölyeler ile hızla öğren.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="community" id="topluluk">
+        <div class="section-title">
+          <h2>Toplulukta yerini al</h2>
+        </div>
+        <div class="community-cards">
+          <div class="community-card">
+            <h4>Yaratıcı ekipler</h4>
+            <p>Arkadaşlarınla ekip kur, birlikte dünyalar yarat.</p>
+          </div>
+          <div class="community-card">
+            <h4>Özel etkinlikler</h4>
+            <p>Canlı yayınlar, konserler ve sezonluk ödüller.</p>
+          </div>
+          <div class="community-card">
+            <h4>Güvenli oyun</h4>
+            <p>Aile kontrolleri ve moderasyon ile güvenli deneyim.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta" id="guvenlik">
+        <div>
+          <h2>Her yaş için güvenli ve eğlenceli</h2>
+          <p>Gelişmiş gizlilik ayarları ve güçlü topluluk kuralları ile güvenli oyun alanı.</p>
+        </div>
+        <button class="primary">Hesap Oluştur</button>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <h3>Roblox Dünyası</h3>
+        <p>Oyna. Oluştur. Paylaş.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#">Yardım</a>
+        <a href="#">Gizlilik</a>
+        <a href="#">Kariyer</a>
+      </div>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
